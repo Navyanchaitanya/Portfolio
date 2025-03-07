@@ -1,0 +1,148 @@
+<!-- skills.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills</title>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8f8;
+            color: #333;
+        }
+
+        /* Navigation Bar */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #064663;
+            padding: 15px 50px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: white;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 1rem;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #a1eafb;
+        }
+
+        /* Skills Section */
+        .skills {
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        .skills h2 {
+            font-size: 2.2rem;
+            color: #064663;
+            margin-bottom: 20px;
+        }
+
+        .skills-section {
+            margin: 30px 0;
+        }
+
+        .skills-section h3 {
+            font-size: 1.5rem;
+            color: #064663;
+            margin-bottom: 15px;
+        }
+
+        /* Skill Items */
+        .skill-item {
+            display: inline-flex;
+            align-items: center;
+            background-color: white;
+            color: #064663;
+            font-size: 1.1rem;
+            font-weight: bold;
+            padding: 12px 20px;
+            margin: 10px;
+            border-radius: 25px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s;
+            cursor: pointer;
+        }
+
+        .skill-item i {
+            margin-right: 8px;
+        }
+
+        .skill-item:hover {
+            transform: scale(1.1);
+            background-color: #a1eafb;
+            box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Navyan</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="certifications.html">Certificates</a></li>
+                <li><a href="#">Skills</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="skills">
+        <h2>My Skills</h2>
+
+        <div class="skills-section">
+            <h3>Technical Skills</h3>
+            <div class="skill-item"><i class="fab fa-python"></i> Python</div>
+            <div class="skill-item"><i class="fab fa-java"></i> Java</div>
+            <div class="skill-item"><i class="fab fa-js"></i> JavaScript</div>
+            <div class="skill-item"><i class="fas fa-code"></i> Web Development</div>
+            <div class="skill-item"><i class="fas fa-robot"></i> Machine Learning</div>
+            <div class="skill-item"><i class="fas fa-mobile-alt"></i> Flutter</div>
+            <div class="skill-item"><i class="fas fa-paint-brush"></i> UI/UX</div>
+        </div>
+
+        <div class="skills-section">
+            <h3>Tools & Technologies</h3>
+            <div class="skill-item"><i class="fab fa-docker"></i> Docker</div>
+            <div class="skill-item"><i class="fab fa-kubernetes"></i> Kubernetes</div>
+            <div class="skill-item"><i class="fab fa-github"></i> Git & GitHub</div>
+        </div>
+
+        <div class="skills-section">
+            <h3>Soft Skills</h3>
+            <div class="skill-item"><i class="fas fa-comments"></i> Public Speaking</div>
+            <div class="skill-item"><i class="fas fa-users"></i> Teamwork</div>
+            <div class="skill-item"><i class="fas fa-lightbulb"></i> Problem Solving</div>
+        </div>
+    </section>
+
+</body>
+</html>

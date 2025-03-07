@@ -1,0 +1,195 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #e6f5f3;
+    color: #0d3b3b;
+}
+
+/* Navbar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 80px;
+    background: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #0d3b3b;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #0d3b3b;
+    font-weight: bold;
+}
+
+.btn {
+    background: #0d3b3b;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px;
+}
+
+/* Hero Text */
+.hero-content h1 {
+    font-size: 40px;
+    margin-left: 150px;
+}
+
+.hero-content span {
+    color: #0d3b3b;
+    font-weight: bold;
+}
+
+.hero-content p {
+    margin-top: 10px;
+    font-size: 16px;
+    max-width: 500px;
+    word-spacing: 0.5px;
+    line-height: 1.5;
+    text-align: justify;
+    margin-left: 150px;
+}
+
+.hero-buttons {
+    margin-top: 20px;
+    margin-left: 150px;
+}
+
+.hire-btn {
+    margin-left: 10px;
+    background: #1d5c5c;
+}
+
+/* Circular Profile Image with Rings */
+/* Hero Image Container */
+.hero-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 400px;
+    margin-right: 100px;
+}
+
+/* Profile Image */
+.hero-image {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 8px solid white; /* Inner white border */
+    position: relative;
+    z-index: 3;
+    box-shadow: 0px 5px 15px rgba(228, 224, 224, 0.2);
+}
+
+/* Dotted Inner Circle */
+.dotted-circle {
+    position: absolute;
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    border: 2px dashed rgba(13, 59, 59, 0.7); /* Dotted effect */
+    z-index: 2;
+}
+
+/* Half-Shaded Outer Circle */
+.half-circle {
+    position: absolute;
+    width: 330px;
+    height: 330px;
+    border-radius: 50%;
+    background: conic-gradient(
+        rgba(150, 207, 207, 0.9) 0deg 180deg,
+        transparent 180deg 360deg
+    );
+    z-index: 1;
+}
+
+/* Background Glow */
+.hero-bg {
+    position: absolute;
+    width: 380px;
+    height: 380px;
+    border-radius: 50%;
+    background: rgba(13, 59, 59, 0.1);
+    z-index: 0;
+    filter: blur(15px);
+}
+
+
+/* Social Links */
+/* Navbar Social Icons */
+.nav-social-icons {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.nav-social-icons a {
+    font-size: 20px;
+    color: #0d3b3b;
+    text-decoration: none;
+    transition: transform 0.3s, color 0.3s;
+}
+
+.nav-social-icons a:hover {
+    transform: scale(1.2);
+    color: #1d5c5c;
+}
+
+/* Custom Styling for LeetCode & CodeChef Logos */
+.nav-social-icons img {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.3s;
+}
+
+.nav-social-icons img:hover {
+    transform: scale(1.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-image {
+        margin-top: 20px;
+    }
+}
+
+

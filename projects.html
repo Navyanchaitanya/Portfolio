@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8f8;
+            color: #333;
+        }
+
+        /* Navigation Bar */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #064663;
+            padding: 15px 50px;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: white;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 1rem;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #a1eafb;
+        }
+
+        /* Projects Section */
+        .projects {
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        .projects h2 {
+            font-size: 2rem;
+            color: #064663;
+            margin-bottom: 30px;
+        }
+
+        /* Project Items */
+        .project-item {
+            background-color: white;
+            color: #064663;
+            font-size: 1.2rem;
+            font-weight: bold;
+            padding: 20px;
+            margin: 20px auto;
+            width: 60%;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-align: left;
+        }
+
+        .project-item h3 {
+            margin-bottom: 10px;
+            text-align: center;
+            font-size: 1.5rem;
+            color: #022c43;
+        }
+
+        .project-item ul {
+            list-style: disc;
+            margin-left: 20px;
+            font-size: 1rem;
+            font-weight: normal;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .project-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .project-item {
+                width: 90%;
+                font-size: 1rem;
+                padding: 15px;
+            }
+
+            .project-item h3 {
+                font-size: 1.3rem;
+            }
+
+            .project-item ul {
+                font-size: 0.95rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Navyan</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="certifications.html">Certificates</a></li>
+                <li><a href="skills.html">Skills</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="projects">
+        <h2>My Projects</h2>
+
+        <div class="project-item">
+            <h3>Drowsy Driver Detection</h3>
+            <ul>
+                <li>Developing a system that detects drowsiness in drivers using computer vision and machine learning techniques.</li>
+                <li>Drowsy driving is a major cause of road accidents, leading to severe injuries and fatalities.</li>
+                <li>The system monitors driver fatigue in real time and alerts the driver before an accident occurs.</li> 
+                <li>Uses image processing techniques to detect signs of drowsiness, such as eye closure, yawning, and head movements.</li>
+            </ul>
+        </div>
+
+        <div class="project-item">
+            <h3>ChatBot</h3>
+            <ul>
+                <li>Developed a AI-driven chatbot using the Gemini API for human-like interactions and virtual assistance.</li>
+                <li>Capable of understanding user queries and providing relevant responses in real time.</li>
+                <li>Can be integrated into websites, messaging platforms, and applications to provide automated customer support.</li>
+                <li>Uses a combination of rule-based and machine learning models to improve accuracy over time.</li>
+            </ul>
+        </div>
+
+        <div class="project-item">
+            <h3>Password Generator</h3>
+            <ul>
+                <li>Created a password generator tool that generates strong and secure passwords.</li>
+                <li>Uses a combination of random characters, numbers, and symbols for security.</li>
+                <li>Allows users to customize the length and complexity of passwords.</li>
+                <li>Helps users protect their accounts from unauthorized access and data breaches.</li>
+            </ul>
+        </div>
+
+        <div class="project-item">
+            <h3>Web Development</h3>
+            <ul>
+                <li>Designed and developed responsive websites using HTML, CSS, and JavaScript.</li>
+                <li>Built an interactive calculator with a responsive design and basic arithmetic operations.</li>
+                <li>Created a visually appealing landing page showcasing modern UI/UX elements.</li>
+                <li>Developed a personal portfolio website highlighting skills, projects, and professional details.</li>
+            </ul>
+        </div>
+    </section>
+</body>
+</html>
